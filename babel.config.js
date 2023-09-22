@@ -15,9 +15,9 @@ module.exports = {
           '.ts',
           '.tsx',
         ],
-        root: ['.'],
+        root: ['./'],
         alias: {
-          '@/*': './src',
+          '^@/(.+)': './src/\\1',
         },
       },
     ],
